@@ -1,0 +1,144 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(
+      284deg,
+      rgba(23, 75, 150, 0.5663515406162465) 2%,
+      rgba(69, 210, 192, 0.1) 46%,
+      rgba(15, 21, 96, 0.48792016806722693) 100%
+    ),
+    url(./images/back.jpg);
+  background-position: 50%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  display: flex;
+  color: aliceblue;
+}
+
+/* HEADER */
+
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgba(41, 41, 57, 0.4);
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  padding: 15% 15px;
+}
+.header-link {
+  color: azure;
+}
+.header-link:hover,
+.header-link:focus {
+  color: rgb(71, 128, 227);
+}
+
+/* HERO */
+.section {
+  padding: 100px 200px;
+}
+.hero {
+  height: 600px;
+  width: 100vw;
+  background-color: rgba(247, 255, 255, 0.3);
+  display: flex;
+  background: linear-gradient(
+      284deg,
+      rgba(23, 75, 150, 0.5663515406162465) 2%,
+      rgba(69, 210, 192, 0.1) 46%,
+      rgba(15, 21, 96, 0.48792016806722693) 100%
+    ),
+    url(./images/background3.jpg);
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+  gap: 100px;
+}
+
+.hero-title {
+  max-width: 1000px;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.hero-button {
+  min-width: 100px;
+  min-height: 70px;
+  border-radius: 20px;
+  border-color: black;
+  background-color: rgb(133, 216, 210);
+  font-style: inherit;
+}
+
+/* Get a joke */
+.joke {
+  display: flex;
+
+  color: black;
+}
+.joke-img {
+  width: 600px;
+}
+
+/* dance */
+.dance {
+  background-color: rgb(97, 168, 174);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.dance-img {
+  width: 300px;
+}
+
+/* activity */
+
+.activity {
+  display: flex;
+  background-color: rgb(245, 255, 208);
+  color: black;
+}
+.activity-img {
+  width: 600px;
+}
+
+/* relax */
+.relax {
+  background-color: rgb(97, 168, 174);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.relax-img {
+  width: 600px;
+}
