@@ -40,7 +40,8 @@ body {
 }
 
 .container {
-  width: 1400px;
+  display: block;
+  max-width: calc(100% - 200px);
   margin: 0 auto;
   padding: 0 50px 0 200px;
 }
@@ -66,18 +67,23 @@ body {
 
 /* HERO */
 .section {
-  width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #dbe6e6a1;
 }
 .hero {
   height: 600px;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: rgba(247, 255, 255, 0.3);
   display: flex;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/background3.jpg);
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 100px 30px;
   gap: 100px;
 }
 
@@ -87,7 +93,8 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-.hero-button {
+.button {
+  min-width: 200px;
   color: #fff;
   padding: 15px 25px;
   background-color: #38d2d2;
@@ -123,32 +130,67 @@ body {
 /* Get a joke */
 .joke {
   display: flex;
-
   color: black;
 }
+.joke-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 600px;
+  padding: 40px 30px;
+}
 .joke-get-wrapper {
-  width: 1200px;
   background-color: #fff;
+  width: calc(100% - 600px);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+
+  background: url(./images/getjoke.gif);
+  background-repeat: repeat;
+  background-size: 200px;
+}
+.jokes-text {
+  font-size: 20px;
 }
 .jokes-parag {
-  font-size: 40px;
+  font-size: 30px;
+  font-style: oblique;
+  background-color: #ffffffdc;
+  min-height: 50%;
+  padding: 10px 20px;
 }
 .joke-img {
-  width: 100%;
+  width: 300px;
 }
 
 /* dance */
 .dance {
-  background-color: rgb(97, 168, 174);
+  background-color: rgb(26, 32, 33);
   display: flex;
+
   flex-direction: row-reverse;
   transition: transform rotate 2s ease;
+}
+.dance-text {
+  padding: 40px 30px;
+  position: relative;
+}
+.dance-text > h2 {
+  margin-bottom: 20px;
+}
+.dance-text > p {
+  margin-bottom: 40px;
 }
 .dance-img {
   width: 300px;
 }
 .dance-roulete {
   transition: transform 1s ease;
+  width: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
 }
 .dance-roulete::after {
   content: "";
