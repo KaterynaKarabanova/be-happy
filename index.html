@@ -28,53 +28,64 @@
       </nav>
     </header>
     <main>
-      <section class="hero section">
-        <h1 class="hero-title">You need some positive vibes, don't you?</h1>
-        <button type="button" class="hero-button">Get Started</button>
-      </section>
-      <section class="joke section">
-        <div class="joke-text-wrapper">
-          <h2>Get a joke</h2>
-          <p>
-            In this section you can get a random joke (and not one!). Get as
-            many jokes as you want. To get a new one, click on the button
-          </p>
-        </div>
-        <p class="joke-setup"></p>
-        <p class="joke-punchline"></p>
-        <img src="./images/getjoke.gif" alt="man" class="joke-img" />
-      </section>
-      <section class="dance section">
-        <div class="dance-text">
-          <h2>Wanna dance?</h2>
-          <p>Then spin the spinner and choose unexpected music for dancing</p>
-        </div>
-        <div class="dance-img-first">
-          <img src="./images/dancing.gif" alt="man" class="dance-img" />
-          <img src="./images/dancing1.gif" alt="man" class="dance-img" />
-        </div>
-        <div class="dance-img-second">
-          <img src="./images/dancing2.gif" alt="man" class="dance-img" />
-          <img src="./images/dancing3.gif" alt="man" class="dance-img" />
-        </div>
-      </section>
-      <section class="activity section">
-        <div class="activity-text">
-          <h2>Choose entertainment</h2>
-          <p>
-            Let's choose a rest for you! I have a collection of over 1000
-            different activities. Try your luck - realize a random vacation
-          </p>
-        </div>
-        <img src="./images/walking.gif" alt="man" class="activity-img" />
-      </section>
-      <section class="relax section">
-        <div class="relax-text">
-          <h2>Relax</h2>
-          <p>Don't forget to rest! You work to live, not live to work.</p>
-        </div>
-        <img src="./images/screeen.gif" alt="man" class="relax-img" />
-      </section>
+      <div class="container">
+        <section class="hero section">
+          <h1 class="hero-title">You need some positive vibes, don't you?</h1>
+          <button type="button" class="hero-button">Get Started</button>
+        </section>
+        <section class="joke section">
+          <div class="joke-text-wrapper">
+            <h2>Get a joke</h2>
+            <p class="jokes-parag">
+              In this section you can get a random joke (and not one!). Get as
+              many jokes as you want. To get a new one, click on the button
+            </p>
+            <button type="button" class="joke-btn">Get a joke</button>
+          </div>
+          <div class="joke-get-wrapper">
+            <img src="./images/getjoke.gif" alt="man" class="joke-img" />
+          </div>
+        </section>
+        <section class="dance section">
+          <div class="dance-text" id="wheel">
+            <h2>Wanna dance?</h2>
+            <p>Then spin the spinner and choose unexpected music for dancing</p>
+            <button type="button" class="dance-Btn">Spin</button>
+
+            <img
+              src="./images/roulete.png"
+              alt="roulete"
+              width="100%"
+              class="dance-roulete"
+            />
+          </div>
+          <div class="dance-img-first">
+            <img src="./images/dancing.gif" alt="man" class="dance-img" />
+            <img src="./images/dancing1.gif" alt="man" class="dance-img" />
+          </div>
+          <div class="dance-img-second">
+            <img src="./images/dancing2.gif" alt="man" class="dance-img" />
+            <img src="./images/dancing3.gif" alt="man" class="dance-img" />
+          </div>
+        </section>
+        <section class="activity section">
+          <div class="activity-text">
+            <h2>Choose entertainment</h2>
+            <p>
+              Let's choose a rest for you! I have a collection of over 1000
+              different activities. Try your luck - realize a random vacation
+            </p>
+          </div>
+          <img src="./images/walking.gif" alt="man" class="activity-img" />
+        </section>
+        <section class="relax section">
+          <div class="relax-text">
+            <h2>Relax</h2>
+            <p>Don't forget to rest! You work to live, not live to work.</p>
+          </div>
+          <img src="./images/screeen.gif" alt="man" class="relax-img" />
+        </section>
+      </div>
     </main>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./index.js" type="module"></script>
